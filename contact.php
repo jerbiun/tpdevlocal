@@ -35,7 +35,6 @@
                                     <div class="form-group">
                                         <input class="form-control valid" name="name" required
                                          id="name" type="text" 
-                                        
                                          placeholder="Enter your name">
                                     </div>
                                 </div>
@@ -63,7 +62,46 @@
                                           placeholder="Tel">
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class ="col-6">
+                                   Cours:<br>
+                                   <div class="ml-5">
+                                   <input type="checkbox" name="cours" value="math"> Math   <br>
+                                   <input type="checkbox" name="cours" value="physic"> Physic   <br>
+                                   <input type="checkbox" name="cours" value="chemistry"> Chemistry <br>
+                                   <input type="checkbox" name="cours" value="biology"> Biology
+</div>
+                                </div>
+                                <div class ="col-6">
+                                 
+                                   <div class="row">
+<div class ="col-12">
+    Sexe:<br>
+    <input type="radio" name="sexe" value="male"> Male  
+    <input type="radio" name="sexe" value="female"> Female
+</div>
+<div class ="col-12 mt-2">
+    <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+  </div>
+</div>
+</div>
+<style> .nice-select{width:100%;} </style>
+<div class ="col-12">
+     <select  >
+  <option selected>Anne</option>
+  <option value="2024">2024</option>
+  <option value="2025">2025</option>
+  <option value="2026">2026</option>
+</select>
+</div>
+</div>
+                                </div>
+                                <div class="col-12 mt-4">
                                     <div class="form-group">
                                         <textarea class="form-control w-100" name="message"
                                          id="message" cols="30" rows="9" 
