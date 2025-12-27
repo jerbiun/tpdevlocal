@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-lg-8">
                         <form class="form-contact contact_form" action="contact_process.php" 
-                        method="post" id="contactForm1"  >
+                        method="post" id="contactForm1" enctype="multipart/form-data"  >
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -65,10 +65,10 @@
                                 <div class ="col-6">
                                    Cours:<br>
                                    <div class="ml-5">
-                                   <input type="checkbox" name="cours" value="math"> Math   <br>
-                                   <input type="checkbox" name="cours" value="physic"> Physic   <br>
-                                   <input type="checkbox" name="cours" value="chemistry"> Chemistry <br>
-                                   <input type="checkbox" name="cours" value="biology"> Biology
+                                   <input type="checkbox" name="cours[]" value="math"> Math   <br>
+                                   <input type="checkbox" name="cours[]" value="physic"> Physic   <br>
+                                   <input type="checkbox" name="cours[]" value="chemistry"> Chemistry <br>
+                                   <input type="checkbox" name="cours[]" value="biology"> Biology
 </div>
                                 </div>
                                 <div class ="col-6">
@@ -81,18 +81,17 @@
 </div>
 <div class ="col-12 mt-2">
     <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-  </div>
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-  </div>
+   
+  
+    <input type="file"   name="profile_pic"
+    id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+ 
+ 
 </div>
 </div>
 <style> .nice-select{width:100%;} </style>
 <div class ="col-12">
-     <select  >
+     <select name="anne" multiple>
   <option selected>Anne</option>
   <option value="2024">2024</option>
   <option value="2025">2025</option>
