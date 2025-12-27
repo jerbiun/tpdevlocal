@@ -52,6 +52,8 @@
                                          type="email" onfocus="this.placeholder = ''" 
                                          onblur="this.placeholder = 'Enter email address'"
                                           placeholder="Email">
+                                          <?php echo isset($_GET["error"])?'<span style="color:red"> Champ obligatoire</span>':'' ;?>
+
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -91,12 +93,13 @@
 </div>
 <style> .nice-select{width:100%;} </style>
 <div class ="col-12">
-     <select name="anne" multiple>
-  <option selected>Anne</option>
+     <select name="anne"  >
+  <option value="" selected>Anne</option>
   <option value="2024">2024</option>
   <option value="2025">2025</option>
   <option value="2026">2026</option>
 </select>
+<?php echo isset($_GET["error"])?'<span style="color:red"> Champ obligatoire</span>':'' ;?>
 </div>
 </div>
                                 </div>

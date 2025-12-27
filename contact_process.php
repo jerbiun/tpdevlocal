@@ -1,6 +1,12 @@
 <?php
 //var_dump($_POST);die();
 if(isset($_POST) && !empty($_POST)){
+	if($_POST['anne'] ==''){
+		header('location:contact.php'.'?error=anne');
+	}
+	if($_POST['email'] =='' && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
+		header('location:contact.php'.'?error=anne');
+	}
 	foreach($_POST as $key => $value){
 		if($key == 'cours'){
 			echo $key . ' : <strong>';
