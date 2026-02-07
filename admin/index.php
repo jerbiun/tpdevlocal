@@ -6,7 +6,7 @@ $dbb = conx();
 
 $res = $dbb->prepare('select * from user');
   $res->execute();
-?>
+?> 
 <?php include 'header.php' ?>
 
       <!--  Header End -->
