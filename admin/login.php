@@ -1,5 +1,5 @@
 <?php 
-include '../fonctions.php' ;
+include '../includes/fonctions.php' ;
 $dbb = conx();
 if(isset($_POST) && !empty($_POST)){
 
