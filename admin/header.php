@@ -1,7 +1,7 @@
 <?php
 session_start();
  if(!isset($_SESSION['user'])){
-    header( 'Location:http://localhost/projet/admin/login.php');
+    header( 'Location:http://localhost/tpdevlocal/admin/login.php');
  }
 
 
