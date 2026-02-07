@@ -1,6 +1,6 @@
 <?php
  
- include '../includes/fonctions.php' ;
+ include '../fonctions.php' ;
 
 $dbb = conx();
 

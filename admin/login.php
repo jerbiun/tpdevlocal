@@ -1,5 +1,5 @@
 <?php 
-include '../includes/fonctions.php' ;
+include '../fonctions.php' ;
 $dbb = conx();
 if(isset($_POST) && !empty($_POST)){
 
@@ -36,7 +36,7 @@ $res->execute( [$_POST['email'] , md5($_POST['pwd'])]);
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projet PFE TSIG 2</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="../admin/assets/css/styles.min.css" />
 </head>
 
 <body>
