@@ -14,8 +14,8 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projet PFE TSIG 2</title>
-  <link rel="shortcut icon" type="image/png" href="/projet/assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="/projet/assets/css/styles.min.css" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="http://localhost/tpdevlocal/admin/assets/css/styles.min.css" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@ session_start();
       <!-- Sidebar scroll-->
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="/projet/admin/index.php" class="text-nowrap logo-img">
+          <a href="index.php" class="text-nowrap logo-img">
              Projet PFE TSIG 2
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -42,7 +42,7 @@ session_start();
               <span class="hide-menu">Home</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/index.php" aria-expanded="false">
+              <a class="sidebar-link" href="index.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
@@ -55,7 +55,7 @@ session_start();
             </li>
           
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/ventes/ventes.php" aria-expanded="false">
+              <a class="sidebar-link" href="ventes/ventes.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-alert-circle"></i>
                 </span>
@@ -63,7 +63,7 @@ session_start();
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/produits/produits.php" aria-expanded="false">
+              <a class="sidebar-link" href="/tpdevlocal/admin/produits/produits.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
                 </span>
@@ -71,7 +71,7 @@ session_start();
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/clients/clients.php" aria-expanded="false">
+              <a class="sidebar-link" href="clients/clients.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-file-description"></i>
                 </span>
@@ -79,7 +79,7 @@ session_start();
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/fourni.php" aria-expanded="false">
+              <a class="sidebar-link" href="fourni.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-typography"></i>
                 </span>
@@ -91,7 +91,7 @@ session_start();
               <span class="hide-menu">Compte</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/utilisateurs.php" aria-expanded="false">
+              <a class="sidebar-link" href="utilisateurs.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-login"></i>
                 </span>
@@ -99,7 +99,7 @@ session_start();
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="/projet/admin/edit_user.php?id=<?php echo $_SESSION['user']['id'] ?>" aria-expanded="false">
+              <a class="sidebar-link" href="edit_user.php?id=<?php echo $_SESSION['user']['id'] ?>" aria-expanded="false">
                 <span>
                   <i class="ti ti-user-plus"></i>
                 </span>
@@ -140,7 +140,7 @@ session_start();
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="/projet/assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">

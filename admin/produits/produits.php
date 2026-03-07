@@ -1,5 +1,5 @@
 <?php
- include '../../fonctions.php' ;
+ include '../../includes/fonctions.php' ;
 
 $dbb = conx();
 
@@ -52,7 +52,9 @@ $res->execute();
                       </tr>
                     </thead>
                     <tbody>
-                      <?php foreach($res->fetchAll() as $row){ ?>
+                      <?php foreach($res->fetchAll() as $row){
+                        
+                        ?>
                       <tr>
                         <td class="border-bottom-0"> 
                             <img src="../uploads/<?php echo $row['image'] ?>" style="width:100px">
